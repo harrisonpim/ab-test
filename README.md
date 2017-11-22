@@ -1,5 +1,5 @@
-# ab-test
-:chart_with_upwards_trend: basic tool to assess the statistical significance of multivariate tests
+# ab-test :chart_with_upwards_trend:
+basic tool to assess the statistical significance of multivariate tests
 
 ### Usage
 ```python
