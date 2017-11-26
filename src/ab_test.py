@@ -29,7 +29,7 @@ def ab_test(control, *args, p=0.05):
     conversion_rate_c = conversion_rate(control)
     conversion_rate_cu = conversion_rate_uncertainty(control)
     print('CONTROL:')
-    print('conversion rate:\t{0} +- {1}'.format(round(conversion_rate_c, 4),
+    print('conversion rate:\t{0} ± {1}'.format(round(conversion_rate_c, 4),
                                                 round(conversion_rate_cu, 4)))
     print('threshhold p-value:\t{0}\n'.format(p))
 
@@ -61,7 +61,7 @@ def ab_test(control, *args, p=0.05):
             print('The test performed worse than the '
                   'control by a significant margin.')
 
-        print('conversion rate:\t{} +- {}'.format(round(conversion_rate_t, 4),
+        print('conversion rate:\t{} ± {}'.format(round(conversion_rate_t, 4),
                                                   round(conversion_rate_tu, 4)))
         print('uplift:\t\t\t' + str(round(uplift, 4)))
         print('Z-score:\t\t' + str(round(Z, 4)))
